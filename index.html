@@ -1,184 +1,321 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Website</title>
+
+    <title>Nathanael Hardine Leston | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet">
 </head>
+
 <body>
 
     <header class="header">
         <a href="#home" class="logo">
-            <span class="nathanael">Nathanael</span>
-            <span class="gradient">Hardine Leston</span>
-        </a>
+            Nathanael <span>Hardine Leston</span>
+</a>
 
-        <i class="bx bx-menu" id="menu-icon"></i>
-        
+    <i class="bx bx-menu" id="menu-icon"></i>
+
         <nav class="navbar">
-            <a href="#home">Home</a>
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contacts</a>
+            <a href="#contact">Contact</a>
         </nav>
-        
-        <a href="#contact"><button class="gradient-btn">Contact Me</button></a>
+
+        <button class="theme-toggle" id="theme-toggle"
+                type="button" aria-label="Switch to dark mode">
+ <i class="bx bx-moon" id="theme-icon"></i>
+        <span id="theme-label">Dark Mode</span>
+        </button>
     </header>
 
+    <!-- utk home -->
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hello, My Name is <span>Nathanael</span></h1>
-            <h3>This is <span>my Website</span></h3>
-            <p>I am a Multimedia Computing student at Universiti Malaysia Sarawak (UNIMAS). I am interested in technology, programming and multimedia design.</p>
+            <h1>Hi, It's <span>Nathanael</span></h1>
+
+        <h3 class="text-animation">
+                I'm a <span></span>
+         </h3>
+
+<p>
+                I am a Multimedia Computing student who is interested in
+                technology, programming, UI/UX design and computer game
+                development. I enjoy learning new skills and creating
+                useful digital experiences.
+            </p>
 
             <div class="social-icons">
-                <a href="https://github.com/" target="_blank"><i class="bx bxl-github"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
-                <a href="https://www.whatsapp.com/" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+     <a href="https://github.com/" target="_blank"
+                   rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="bx bxl-github"></i>
+             </a>
+
+         <a href="https://www.linkedin.com/" target="_blank"
+                   rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="bx bxl-linkedin-square"></i>
+            </a>
+
+                <a href="https://www.instagram.com/" target="_blank"
+                   rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="bx bxl-instagram-alt"></i>
+            </a>
+
+            <a href="https://www.whatsapp.com/" target="_blank"
+                rel="noopener noreferrer" aria-label="WhatsApp">
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
             </div>
-            
+
             <div class="btn-group">
-                <a href="#contact" class="btn">Hire</a>
-                <a href="#contact" class="btn">Contact</a>
+                <a href="#contact" class="btn">Contact Me</a>
+                <a href="#about" class="btn btn-outline">About Me</a>
             </div>
         </div>
-        
+
         <div class="home-img">
-            <img src="image.jpeg" alt="Profile Picture">
+            <img src="image.jpeg" alt="Portrait of Nathanael">
         </div>
     </section>
 
+    <!-- utk about -->
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="image.jpeg" alt="My Profile Picture">
+     <div class="about-img">
+            <img src="image.jpeg" alt="Nathanael's profile">
         </div>
-        <div class="about-content">
-            <h2>About <span>Me</span></h2>
-            <p>My goal is to gain more experience and develop my skills for my future career.</p>
-            <a href="#" class="btn">Read More</a>
+
+     <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+
+        <h3>Multimedia Computing Student</h3>
+
+        <p>
+                I am an IT student who completed PT3 and SPM before
+                continuing my studies with a Diploma in Information
+                Management at Universiti Teknologi MARA (UiTM).
+                I am currently pursuing a degree in Multimedia Computing
+                at Universiti Malaysia Sarawak (UNIMAS).
+            </p>
+
+            <p>
+                I am interested in programming, UI/UX design, computer
+                game development and multimedia technology. My goal is
+                to improve my skills, gain practical experience and
+                prepare myself for a future career in the IT field.
+            </p>
+
+            <a href="#education" class="btn">My Education</a>
+        </div>
+
+        <div class="education" id="education">
+            <h3 class="heading">My <span>Education</span></h3>
+
+            <div class="education-list">
+                <div class="education-item">
+                    <span class="education-year">Secondary School</span>
+                    <h4>PT3</h4>
+                    <p>Completing PT3 with 3A at Sekolah Menengah Kebangsaan Bintulu</p>
+          </div>
+
+                <div class="education-item">
+                   <span class="education-year">Secondary School</span>
+                <h4>SPM</h4>
+                   <p>Completing SPM with 2A at Sekolah Menengah Kebangsaan Bintulu</p>
+        </div>
+                <div class="education-item">
+             <span class="education-year">Diploma</span>
+                <h4>Universiti Teknologi MARA (UiTM)</h4>
+        <p>Diploma in Information Management.</p>
+                </div>
+                <div class="education-item">
+                 <span class="education-year">Current Studies</span>
+              <h4>Universiti Malaysia Sarawak (UNIMAS)</h4>
+                   <p>Degree in Multimedia Computing.</p>
+                </div>
+           </div>
         </div>
     </section>
 
+    <!-- utk services -->
     <section class="services" id="services">
-        <h2 class="heading">Services</h2>
+        <h2 class="heading">My <span>Services</span></h2>
 
         <div class="services-container">
-            <div class="services-box">
-                <div class="services-info">
-                    <i class="bx bx-grid-alt"></i>
-                    <h4>UI/UX Design</h4>
-                    <p>UI/UX design focuses on creating attractive, user-friendly interfaces and providing a smooth and enjoyable user experience.</p>
-                </div>
-            </div>
 
             <div class="services-box">
                 <div class="services-info">
-                    <i class="bx bx-joystick"></i>
+                    <i class="bx bx-palette service-icon"></i>
+                  <h4>UI/UX Design</h4>
+          <p>
+                        Designing simple, attractive and user-friendly
+                        interfaces that provide a better user experience.
+                  </p>
+               </div>
+            </div>
+
+     <div class="services-box">
+                <div class="services-info">
+                    <i class="bx bx-joystick service-icon"></i>
                     <h4>Computer Game Development</h4>
-                    <p>Focuses on creating interactive and engaging games using programming, game design, and creative problem-solving skills.</p>
+                   <p>
+                 Exploring game design, gameplay mechanics and
+                        interactive experiences using game development tools.
+            </p>
                 </div>
             </div>
 
             <div class="services-box">
-                <div class="services-info">
-                    <i class="bx bxs-circle"></i>
+            <div class="services-info">
+             <i class="bx bx-code-alt service-icon"></i>
                     <h4>Object-Oriented Design</h4>
-                    <p>Focuses on designing software using classes and objects to create organized, reusable, and efficient programs.</p>
+                    <p>
+               Applying object-oriented programming concepts to
+                        organise code and develop structured applications.
+                    </p>
+                </div>
+         </div>
+
+        </div>
+    </section>
+
+    <!-- utk part part project -->
+    <section class="projects" id="projects">
+     <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="project1.png" alt="Project 1">
+                <div class="project-info">
+            <h4>Project 1</h4>
+                    <p>A project showcasing my creativity and technical skills.</p>
+            </div>
+            </div>
+
+          <div class="project-card">
+                <img src="project2.png" alt="Project 2">
+             <div class="project-info">
+                   <h4>Project 2</h4>
+                    <p>A project developed as part of my learning journey.</p>
+                </div>
+         </div>
+
+            <div class="project-card">
+           <img src="project3.jpg" alt="Project 3">
+                <div class="project-info">
+               <h4>Project 3</h4>
+                    <p>An example of my multimedia and design work.</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="projects" id="projects">
-        <h2 class="heading">Projects</h2>
-        <div class="projects-box">
-            <div class="projects-card">
-                <img src="project1.png" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>UI (User Interface) focuses on how a website or app looks. UX (User Experience) focuses on how it feels.</p>
-                <a href="#" class="btn">Review Project</a>
-            </div>
+            <div class="project-card">
+             <img src="project4.jpg" alt="Project 4">
+              <div class="project-info">
+                    <h4>Project 4</h4>
+                    <p>A project focused on digital design and development.</p>
+                </div>
+           </div>
 
-            <div class="projects-card">
-                <img src="project2.png" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Java: A popular, object-oriented programming language used for building scalable applications, mobile apps and enterprise systems.</p>
-                <a href="#" class="btn">Review Project</a>
-            </div>
-
-            <div class="projects-card">
-                <img src="project3.jpg" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>Database Design: The process of structuring and organizing data efficiently to ensure smooth storage, retrieval and management in a system.</p>
-                <a href="#" class="btn">Review Project</a>
-            </div>
-
-            <div class="projects-card">
-                <img src="project4.jpg" alt="Project 4">
-                <h3>Project 4</h3>
-                <p>Object-Oriented Design (OOD): A software design method that organizes code around "objects" (data and behaviors) rather than just actions and logic.</p>
-                <a href="#" class="btn">Review Project</a>
-            </div>
-
-            <div class="projects-card">
+            <div class="project-card">
                 <img src="project5.jpg" alt="Project 5">
-                <h3>Project 5</h3>
-                <p>Computer Graphic Design: The creation and manipulation of visual content, digital images and 3D models using computer software.</p>
-                <a href="#" class="btn">Review Project</a>
+         <div class="project-info">
+                    <h4>Project 5</h4>
+                 <p>A project that helped me improve my technical skills.</p>
+                </div>
+        </div>
+
+       <div class="project-card">
+                <img src="project6.jpg" alt="Project 6">
+                <div class="project-info">
+                    <h4>Project 6</h4>
+         <p>Another example of my work and learning progress.</p>
+                </div>
             </div>
 
-            <div class="projects-card">
-                <img src="project6.jpg" alt="Project 6">
-                <h3>Project 6</h3>
-                <p>Operating System (OS): Software that manages computer hardware, system resources and provides common services for computer programs.</p>
-                <a href="#" class="btn">Review Project</a>
-            </div>
         </div>
     </section>
 
+    <!-- utk contact -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="#">
+
+        <p class="contact-description">
+           Feel free to contact me for questions, collaboration or
+            opportunities to learn and work together.
+        </p>
+
+ <form id="contact-form">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
+                 <input type="text" id="contact-name"
+                          placeholder="Full Name" required>
+
+                    <input type="email" id="contact-email"
+                   placeholder="Email Address" required>
                 </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Email Subject">
+
+          <div class="input-box">
+                    <input type="tel" id="contact-phone"
+                           placeholder="Phone Number">
+
+                 <input type="text" id="contact-subject"
+                           placeholder="Email Subject" required>
                 </div>
             </div>
 
-            <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </div>
+        <div class="input-group-2">
+                <textarea id="contact-message"
+                          placeholder="Your Message"
+                          rows="7" required></textarea>
+
+         <button type="submit" class="btn">
+                    Send Message
+                </button>
+          </div>
         </form>
     </section>
 
+
     <footer class="footer">
         <div class="social-icons">
-            <a href="https://github.com/" target="_blank"><i class="bx bxl-github"></i></a>
-            <a href="https://www.linkedin.com/" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
-            <a href="https://www.whatsapp.com/" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://github.com/" target="_blank"
+               rel="noopener noreferrer" aria-label="GitHub">
+                <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank"
+               rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="bx bxl-linkedin-square"></i>
+         </a>
+
+            <a href="https://www.instagram.com/" target="_blank"
+             rel="noopener noreferrer" aria-label="Instagram">
+                <i class="bx bxl-instagram-alt"></i>
+         </a>
+
+            <a href="https://www.whatsapp.com/" target="_blank"
+           rel="noopener noreferrer" aria-label="WhatsApp">
+                <i class="bx bxl-whatsapp"></i>
+            </a>
         </div>
 
-        <ul class="list">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+     <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+         <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
         <p class="copyright">
-            © Nathanael Hardine Leston | All Rights Reserved
+            © 2026 Nathanael Hardine Leston. All Rights Reserved.
         </p>
     </footer>
 
